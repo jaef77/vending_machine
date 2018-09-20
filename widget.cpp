@@ -99,5 +99,7 @@ void Widget::on_Return_clicked()
     }
 
     setControl();
-    QMessageBox::information(this, "Return", QString("500 : %d\n100 : %d\n50 : %d\n10 : %d\ncoins are returned!").arg(c500).arg(c100).arg(c50).arg(c10));
+    QString str;
+    str.sprintf("500 : %d\n100 : %d\n50 : %d\n10 : %d\ncoins are returned!", c500, c100, c50, c10);
+    QMessageBox::information(this, "Coins Returned", str, "OK");
 }
