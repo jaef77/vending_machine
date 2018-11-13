@@ -24,6 +24,26 @@ void Widget::setControl() {
     ui->cola200->setEnabled(money >= 200);
 }
 
+void Widget::on_coffee100_clicked()
+{
+    money -= 100;
+    setControl();
+}
+
+void Widget::on_tea150_clicked()
+{
+    money -= 150;
+    setControl();
+}
+
+
+
+void Widget::on_cola200_clicked()
+{
+    money -= 200;
+    setControl();
+}
+
 void Widget::on_pay500_clicked()
 {
     money += 500;
@@ -45,24 +65,6 @@ void Widget::on_pay50_clicked()
 void Widget::on_pay10_clicked()
 {
     money += 10;
-    setControl();
-}
-
-void Widget::on_coffee100_clicked()
-{
-    money -= 100;
-    setControl();
-}
-
-void Widget::on_tea150_clicked()
-{
-    money -= 150;
-    setControl();
-}
-
-void Widget::on_cola200_clicked()
-{
-    money -= 200;
     setControl();
 }
 

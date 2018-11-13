@@ -15,16 +15,25 @@ public:
     explicit Widget(QWidget *parent = nullptr);
     ~Widget();
     void setControl();
-    void on_pay500_clicked();
-    void on_pay100_clicked();
-    void on_pay50_clicked();
-    void on_pay10_clicked();
-    void on_coffee100_clicked();
-    void on_tea150_clicked();
-    void on_cola200_clicked();
-    void on_Return_clicked();
     int money;
 
+
+private slots:
+    void on_coffee100_clicked();
+
+    void on_tea150_clicked();
+
+    void on_cola200_clicked();
+
+    void on_pay500_clicked();
+
+    void on_pay100_clicked();
+
+    void on_pay50_clicked();
+
+    void on_pay10_clicked();
+
+    void on_Return_clicked();
 
 private:
     Ui::Widget *ui;
